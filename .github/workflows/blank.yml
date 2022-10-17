@@ -26,9 +26,16 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      -name: creating temp folder
+        run: mkdir hi
+      
+      -name: make the file
         run: |
-          python3 --version
-          python3 test.py
-          g++ --version
           g++ test.cpp -Os -o test
+          mv ./test ./hi/test
+      
+      -name: upload artifact 
+        uses: actions/upload-artifact@v3
+        with: 
+          name: test
+          path: ./hi/test

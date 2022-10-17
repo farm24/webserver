@@ -26,14 +26,14 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-        -name: creating temp folder
-          run: |
-            mkdir hi
+      -name: creating temp folder
+        run: |
+          mkdir hi
       
-        -name: make the file
-          run: |
-            g++ test.cpp -Os -o test
-            mv ./test ./hi/test
+      -name: make the file
+        run: |
+          g++ test.cpp -Os -o test
+          mv ./test ./hi/test
       
       -name: upload artifact 
         uses: actions/upload-artifact@v2

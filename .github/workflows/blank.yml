@@ -29,3 +29,4 @@ jobs:
       - name: Run a one-line script
         run: |
           python3 --version
+          python3 test.py

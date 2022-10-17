@@ -31,4 +31,4 @@ jobs:
           python3 --version
           python3 test.py
           g++ --version
-          g++ test.cpp -Os -o test
+          ls

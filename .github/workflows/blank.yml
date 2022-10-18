@@ -29,6 +29,12 @@ jobs:
       - name: creating temp folder
         run: |
           mkdir hi
+      - name: installing dependencies 
+        run: |
+          sudo apt install git
+          sudo apt install gcc
+          sudo apt install g++
+          sudo apt install cmake
       
       - name: make the file
         run: |

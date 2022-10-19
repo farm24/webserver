@@ -31,12 +31,13 @@ jobs:
           mkdir hi
       - name: installing dependencies 
         run: |
-        
+      
       
       - name: make the file
         run: |
           g++ test.cpp -Os -o test
           mv ./test ./hi/test
+          ./hi/test
       
       - name: upload artifact 
         uses: actions/upload-artifact@v2

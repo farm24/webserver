@@ -1,8 +1,8 @@
 #include <iostream>
-using namespace std:
+using namespace std;
 
 int main() {
     while (int i = 0; i < 100; i++) {
-        cout << i << "\n":
+        cout << i << "\n";
     }
 }

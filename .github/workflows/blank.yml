@@ -31,25 +31,7 @@ jobs:
           mkdir hi
       - name: installing dependencies 
         run: |
-          sudo apt install git
-          sudo apt install gcc
-          sudo apt install g++
-          sudo apt install cmake
-          sudo apt install libjsoncpp-dev
-          sudo apt install uuid-dev
-          sudo apt install openssl
-          sudo apt install libssl-dev
-          sudo apt install zlib1g-dev
-          sudo apt install boost
-          sudo apt-get install postgresql-server-dev-all
-          cd $WORK_PATH
-          git clone https://github.com/drogonframework/drogon
-          cd drogon
-          git submodule update --init
-          mkdir build
-          cd build
-          cmake ..
-          make && sudo make install
+        
       
       - name: make the file
         run: |
